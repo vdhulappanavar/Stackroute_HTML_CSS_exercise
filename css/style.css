@@ -1,7 +1,11 @@
+body{
+    background-color:#DCDCDC;
+}
 .hero_element{
     width: 100%;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 .hero_col1{
@@ -9,12 +13,12 @@
 }
 
 .hero_col2{
-    flex:4;
+    flex:3;
 }
 
 #mainDiv{
-    width:400px;
-    height: 400px;
+    width:200px;
+    height: 200px;
     margin: 500px auto;
     perspective: 800px;
     /*
@@ -28,14 +32,8 @@
     border: 5px  solid black; 
 }
 
-#test{
-   width:100px;
-   height:100px;
-   background-color: yellow;
-}
-
 #boxDiv{
-   width:400px;
+   width:200px;
    transform-style: preserve-3d ;
    animation: rotate 15s linear infinite ; 
 }
@@ -46,8 +44,8 @@
       with position absolute they are one
       behind the other and we can manipulate these frames
   */
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   
   color:white;
   font: 80px impact; 
@@ -57,7 +55,7 @@
 }
 
 #front{
-    transform: translateZ(200px);
+    transform: translateZ(100px);
     background: black;
      
 }
@@ -74,12 +72,12 @@
 
 
 #back{
-   transform: rotateY(180deg) translateZ(200px);
+   transform: rotateY(180deg) translateZ(100px);
    background: #101010; 
 }
 
 #left{
-   transform: rotateY(-90deg) translateX(-200px);
+   transform: rotateY(-90deg) translateX(-100px);
    transform-origin: left;
    background: black;
 }
@@ -91,20 +89,20 @@
 */
 
 #right{
-   transform: rotateY(90deg) translateX(200px);
+   transform: rotateY(90deg) translateX(100px);
    transform-origin: right;
    background: #101010;
 }
 
 
 #top{
-   transform: rotateX(-90deg) translateY(-200px);
+   transform: rotateX(-90deg) translateY(-100px);
    transform-origin: top;
    background: black;
 }
 
 #bottom{
-   transform: rotateX(90deg) translateY(200px);
+   transform: rotateX(90deg) translateY(100px);
    transform-origin: bottom ;
    background: #101010;
 }
