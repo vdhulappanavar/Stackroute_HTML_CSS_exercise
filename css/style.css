@@ -1,0 +1,128 @@
+.hero_element{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.hero_col1{
+    flex:2;
+}
+
+.hero_col2{
+    flex:4;
+}
+
+#mainDiv{
+    width:400px;
+    height: 400px;
+    margin: 500px auto;
+    perspective: 800px;
+    /*
+      persepective is a property that defines how far
+      a 3D element is placed from view
+      when we aplly this element the child elemnet will get
+      persepctive,not the element on which it is defined 
+      so boxdiv will get perspective rather than maindiv
+    */
+   /*   background-color:green; added for testing*/
+    border: 5px  solid black; 
+}
+
+#test{
+   width:100px;
+   height:100px;
+   background-color: yellow;
+}
+
+#boxDiv{
+   width:400px;
+   transform-style: preserve-3d ;
+   animation: rotate 15s linear infinite ; 
+}
+
+#boxDiv div{
+  position: absolute; 
+  /*
+      with position absolute they are one
+      behind the other and we can manipulate these frames
+  */
+  width: 400px;
+  height: 400px;
+  
+  color:white;
+  font: 80px impact; 
+  text-align: center;
+  
+  /*border: 5px solid black; added for texting what would happen without absolute postioning*/
+}
+
+#front{
+    transform: translateZ(200px);
+    background: black;
+     
+}
+
+/*
+  The transorm property can be used for applying  @D or 3D transformation
+  an element
+  We can apply transformation such as rotate translate
+  change size on html elements 
+
+  translateZ defines a function of 3D translation on z axis
+
+*/
+
+
+#back{
+   transform: rotateY(180deg) translateZ(200px);
+   background: #101010; 
+}
+
+#left{
+   transform: rotateY(-90deg) translateX(-200px);
+   transform-origin: left;
+   background: black;
+}
+/*
+  Transform origin is a property lets us decide from where we want 
+  transformation to occur
+  default for this is 50% i.e center
+   
+*/
+
+#right{
+   transform: rotateY(90deg) translateX(200px);
+   transform-origin: right;
+   background: #101010;
+}
+
+
+#top{
+   transform: rotateX(-90deg) translateY(-200px);
+   transform-origin: top;
+   background: black;
+}
+
+#bottom{
+   transform: rotateX(90deg) translateY(200px);
+   transform-origin: bottom ;
+   background: #101010;
+}
+
+@keyframes rotate{
+  0%{transform: rotateY(0);}
+  100%{transform: rotateY(360deg)}
+}     
+
+
+
+/*
+  We create animation in css using @keyframes rule
+  we write keyframes and specify animation name
+  here rotate is the name of our animation
+
+  what will happen to a particular property
+  at a partiular time 
+
+  now we need to bind the animation to boxDiv
+*/
