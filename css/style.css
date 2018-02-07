@@ -4,7 +4,15 @@ body{
     margin: 0px;
 }
 
+header nav ul li{
+    display: inline;
+}
 
+.fixed_header1{
+    display:flex;
+    justify-content: space-between;
+    background: #673ab7;
+}
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -150,29 +158,84 @@ body{
     border-radius: 10px;
 }
 
-.col-layout{
-    max-width: 1300px;
+.col-layout{    
     line-height: 1.65;
     background: white;
-    width:900px;
+    width:100%;
+    padding-right:0px;
     margin:auto;
-    padding: 10px;
+    padding: 2px 0;
     display: flex;
+    justify-content: flex-start;
 }
 .main-col{
     flex:2;
     order:2;
+    color:white;
+    background: #35c793;
+    text-align : center;
+}
+
+.main-col:hover{
+    opacity: 0.9;
 }
 
 .sidebar-one{
     flex:1;
     order:1;
+    background: #e83a56;
+    text-align: center;
+    opacity:0.9;
+    color: white;
 }
 
 .sidebar-two{
     flex:1;
     order:3;
+    background: #e83a56;
+    opacity: 0.9;
+    text-align: center;
+    color:white;
 }
+
+.button {
+    border-radius: 4px;
+    background-color: #ff9800;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 #mainDiv{
     width:200px;
