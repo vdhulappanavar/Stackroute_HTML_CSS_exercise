@@ -6,6 +6,30 @@ body{
 
 header nav ul li{
     display: inline;
+    color: white;
+}
+
+header nav ul li:after{
+content: '|';
+padding-left:3px;
+padding-right:3px;
+}
+
+header nav ul li:last-child:after{
+    content: none;
+    padding-left:3px;
+    padding-right:10px;
+    }
+
+header nav ul li a:hover{
+        
+        font-weight: bold;
+        text-decoration: underline;
+}    
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
 }
 
 .fixed_header1{
@@ -28,6 +52,17 @@ header nav ul li{
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
 }
+.mailing-list-home {
+    overflow: hidden;
+    margin-top: 5px;
+    /*display: block;*/
+    text-align: center;
+    vertical-align: baseline;
+    font-size: 100%;
+    width:300px;
+    height:100px;
+}
+
 .main-nav__client-login {
     position: relative;
     top: 100%;
@@ -62,7 +97,7 @@ header nav ul li{
     height: 80vh; 
     width: 100%;
    background-image: url(../images/hero_image1.jpg);
-   background-size: cover;
+   background-size: cover; 
    border: 2px solid white;
    border-color: white;
    transform: translate3d(0, 0, 0);
@@ -174,6 +209,7 @@ header nav ul li{
     color:white;
     background: #35c793;
     text-align : center;
+    border:1px solid white;
 }
 
 .main-col:hover{
@@ -187,6 +223,7 @@ header nav ul li{
     text-align: center;
     opacity:0.9;
     color: white;
+    border:1px solid white;
 }
 
 .sidebar-two{
@@ -196,6 +233,7 @@ header nav ul li{
     opacity: 0.9;
     text-align: center;
     color:white;
+    border:1px solid white;
 }
 
 .button {
@@ -236,6 +274,71 @@ header nav ul li{
     opacity: 1;
     right: 0;
   }
+
+  .equal-height-container{
+    max-height: 900px;
+    margin: 3px auto;
+    width: 100%;
+    display: flex; 
+}
+
+.first{
+    height: 30vh; 
+    width: 50%;
+  
+    background-size: cover;
+    background-image: url(../images/crowd_management1.jpeg);
+    background-repeat: no-repeat;
+    
+    padding : 0px 0px;
+    flex:1; 
+    
+   
+   background-attachment: fixed;
+    
+}
+
+.second{
+    
+    flex : 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.second ul li{
+    display:inline;
+}
+
+.second-a{
+    background-color: #673ab7;
+    opacity: 0.8;
+    letter-spacing: 1.5px;
+    text-align: right;
+     flex:1;
+    
+}
+
+.second-b{
+    background-color: #35c793;
+    flex:1;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;   
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;    
+    text-rendering: auto;
+    color: initial; 
+    
+    display: inline-block;
+    text-align: start;    
+    font: 400 11px system-ui;
+}
+.right-arrow {
+    width: 19px;
+}
 
 #mainDiv{
     width:200px;
