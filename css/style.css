@@ -2,6 +2,7 @@ body{
     
     padding:0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header nav ul li{
@@ -283,7 +284,7 @@ header nav ul li a{
 }
 
 .first{
-    height: 30vh; 
+    
     width: 50%;
   
     background-size: cover;
@@ -341,9 +342,9 @@ input {
 }
 
 #mainDiv{
-    width:200px;
-    height: 200px;
-    margin: 500px auto;
+    width:50px;
+    height: 50px;
+    /*margin: 500px auto;*/
     perspective: 800px;
     /*
       persepective is a property that defines how far
@@ -357,7 +358,7 @@ input {
 }
 
 #boxDiv{
-   width:200px;
+   width:50px;
    transform-style: preserve-3d ;
    animation: rotate 15s linear infinite ; 
 }
@@ -368,18 +369,13 @@ input {
       with position absolute they are one
       behind the other and we can manipulate these frames
   */
-  width: 200px;
-  height: 200px;
-  
-  color:white;
-  font: 80px impact; 
-  text-align: center;
-  
+  width: 50px;
+  height: 50px;
   /*border: 5px solid black; added for texting what would happen without absolute postioning*/
 }
 
 #front{
-    transform: translateZ(100px);
+    transform: translateZ(25px);
     background: black;
      
 }
@@ -396,12 +392,12 @@ input {
 
 
 #back{
-   transform: rotateY(180deg) translateZ(100px);
+   transform: rotateY(180deg) translateZ(25px);
    background: #101010; 
 }
 
 #left{
-   transform: rotateY(-90deg) translateX(-100px);
+   transform: rotateY(-90deg) translateX(-25px);
    transform-origin: left;
    background: black;
 }
@@ -413,20 +409,20 @@ input {
 */
 
 #right{
-   transform: rotateY(90deg) translateX(100px);
+   transform: rotateY(90deg) translateX(25px);
    transform-origin: right;
    background: #101010;
 }
 
 
 #top{
-   transform: rotateX(-90deg) translateY(-100px);
+   transform: rotateX(-90deg) translateY(-25px);
    transform-origin: top;
    background: black;
 }
 
 #bottom{
-   transform: rotateX(90deg) translateY(100px);
+   transform: rotateX(90deg) translateY(25px);
    transform-origin: bottom ;
    background: #101010;
 }
@@ -436,7 +432,13 @@ input {
   100%{transform: rotateY(360deg)}
 }     
 
-
+.footer_css{
+    display: flex;
+    justify-content: space-between;
+    
+    height: 50px;
+    opacity: 0.8;
+}
 
 /*
   We create animation in css using @keyframes rule
