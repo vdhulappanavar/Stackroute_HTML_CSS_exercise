@@ -38,34 +38,10 @@ header nav ul li a{
     justify-content: space-between;
     background: #673ab7;
 }
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -webkit-font-feature-settings: 'liga';
-    -webkit-font-smoothing: antialiased;
-}
-.mailing-list-home {
-    overflow: hidden;
-    margin-top: 5px;
-    /*display: block;*/
-    text-align: center;
-    vertical-align: baseline;
-    font-size: 100%;
-    width:300px;
-    height:100px;
-}
+
 
 .main-nav__client-login {
-    position: relative;
+    
     top: 100%;
     left: 10%;
     padding-top: 1em;
@@ -145,7 +121,7 @@ header nav ul li a{
    
    
    padding: 0px; 
-   position: absolute; 
+   
    top: 200px; 
    left: 0; 
    width: 100%; 
@@ -155,30 +131,7 @@ header nav ul li a{
 .box1 p{
     background: #e83a56;
 }
-.hero_element{
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    flex-flow: row wrap;
-}
 
-.hero_col1{
-    padding: auto;
-    display: flex;
-    flex:2;
-}
-
-.hero_col2{
-    padding: auto;
-    display: flex;
-    flex:1;
-}
-
-.hero_heading_deco1{
-    width:100px;
-    height: 100px;
-    background: #e83a56;
-}
 
 .hero_element_redo_h1_part1{
     background-color: #35c793;
@@ -254,13 +207,13 @@ header nav ul li a{
   .button span {
     cursor: pointer;
     display: inline-block;
-    position: relative;
+    
     transition: 0.5s;
   }
   
   .button span:after {
     content: '\00bb';
-    position: absolute;
+    
     opacity: 0;
     top: 0;
     right: -20px;
@@ -364,7 +317,7 @@ input {
 }
 
 #boxDiv div{
-  position: absolute; 
+    position: absolute; 
   /*
       with position absolute they are one
       behind the other and we can manipulate these frames

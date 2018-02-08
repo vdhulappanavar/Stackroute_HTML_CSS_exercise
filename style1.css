@@ -1,0 +1,138 @@
+body{
+    
+    padding:0px;    
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav li{
+    display: inline;
+}
+
+header nav li a{
+    text-decoration: none;
+}
+.fixed_header1{
+    display:flex;
+    justify-content: space-between;
+    background: #673ab7;
+}
+
+
+.main-nav__client-login {
+    
+    top: 100%;
+    left: 10%;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 1.5em;
+    border-bottom: 0.5em solid #e83a56;
+    background-color: #e83a56;
+    z-index: 1000;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    opacity:0.7;
+    text-decoration: none;
+    font-size: 0.9em;
+    
+    box-shadow: 0 5px 15px #999999;
+    
+    border-bottom-left-radius: 4.5em;
+    
+    border-bottom-right-radius: 4.5em;
+    
+    transition: all 0.5s;
+}
+
+.box1{
+    height: 80vh; 
+    width: 100%;
+   background-image: url(../images/hero_image1.jpg);
+   background-size: cover; 
+   border: 2px solid white;
+   border-color: white;
+   transform: translate3d(0, 0, 0);
+   display: table;
+   background-attachment: fixed;
+}
+
+.box1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: white; 
+    margin: 0px;
+    text-align: center; 
+    display: table-cell; 
+    vertical-align: middle; 
+    color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   
+   
+   padding: 0px; 
+   
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+   letter-spacing: 1px;
+}
+
+.hero_element_redo_h1_part1{
+    background-color: #35c793;
+    padding: 10px;
+    margin:10px 10px;
+    border: 10px;
+    border-radius: 10px;
+}
+
+.hero_element_redo_h1_part2{
+    background-color: #e83a56;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.col-layout{    
+    line-height: 1.65;
+    background: white;
+    width:100%;
+    padding-right:0px;
+    margin:auto;
+    padding: 2px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.main-col{
+    flex:2;
+    order:2;
+    color:white;
+    background: #35c793;
+    text-align : center;
+    border:1px solid white;
+}
+
+.main-col:hover{
+    opacity: 0.9;
+}
+
+.sidebar-one{
+    flex:1;
+    order:1;
+    background: #e83a56;
+    text-align: center;
+    opacity:0.9;
+    color: white;
+    border:1px solid white;
+}
+
+.sidebar-two{
+    flex:1;
+    order:3;
+    background: #e83a56;
+    opacity: 0.9;
+    text-align: center;
+    color:white;
+    border:1px solid white;
+}
