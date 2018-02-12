@@ -12,10 +12,47 @@ header nav li{
 header nav li a{
     text-decoration: none;
 }
+
+header nav ul li{
+    display: inline;
+    color: white;
+}
+
+header nav ul li:after{
+content: '|';
+padding-left:3px;
+padding-right:3px;
+}
+
+header nav ul li:last-child:after{
+    content: none;
+    padding-left:3px;
+    padding-right:10px;
+    }
+
+header nav ul li a:hover{
+        
+        font-weight: bold;
+        text-decoration: underline;
+}    
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
 .fixed_header1{
     display:flex;
     justify-content: space-between;
     background: #673ab7;
+    position: fixed;
+}
+.fixed_header{
+    display: flex;
+    width : 100%;
+    justify-content: space-between;
+    background: #673ab7;
+    z-index: 10000;
+    position: fixed;
 }
 
 
@@ -50,7 +87,7 @@ header nav li a{
 .box1{
     height: 80vh; 
     width: 100%;
-   background-image: url(../images/hero_image1.jpg);
+   background-image: url(images/hero_image1.jpg);
    background-size: cover; 
    border: 2px solid white;
    border-color: white;
@@ -136,3 +173,108 @@ header nav li a{
     color:white;
     border:1px solid white;
 }
+
+.button {
+    border-radius: 4px;
+    background-color: #ff9800;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .equal-height-container{
+    max-height: 900px;
+    margin: 3px auto;
+    width: 100%;
+    display: flex; 
+}
+
+.first{
+    
+    width: 50%;
+  
+    background-size: cover;
+    background-image: url(images/crowd_management1.jpeg);
+    background-repeat: no-repeat;
+    
+    padding : 0px 0px;
+    flex:1; 
+    
+   
+   background-attachment: fixed;
+    
+}
+
+.second{
+    
+    flex : 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.second ul li{
+    display:inline;
+}
+
+.second-a{
+    background-color: #673ab7;
+    opacity: 0.8;
+    letter-spacing: 1.5px;
+    text-align: right;
+     flex:1;
+    
+}
+
+.second-b{
+    background-color: #35c793;
+    flex:1;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;   
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;    
+    text-rendering: auto;
+    color: initial; 
+    
+    display: inline-block;
+    text-align: start;    
+    font: 400 11px system-ui;
+}
+.right-arrow {
+    width: 19px;
+}
+
