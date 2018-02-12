@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,9 +12,6 @@
 </head>
 <body>
     <header class="fixed_header"> 
-        
-            
-        
         <nav>
             <ul>
                     <li><a href="#">Crowd Rank Table</a></li>
@@ -33,7 +31,7 @@
                 </h1>            
         </section>
         <section class="col-layout">
-                <div class="main-col">
+                <div class="main-col"> <!this div needed to make main col div1>
                     <h1 style="letter-spacing:2px;font-weight:bold;line-height:55px">Make Your decision</h1>
                     <h4 style="letter-spacing:1.5px;font-weight:bold;line-height:30px;">
                             We Can Help Optimise your time!<br>
@@ -43,7 +41,7 @@
                             <button class="button" style="opacity:0.8"><span>Crowd Rank Table </span></button>
                     </h4>
                 </div>
-                <div class="sidebar-one">
+                <div class="sidebar-one"> <!div2 need for defining a flex container>
                     <h1 style="letter-spacing:2px;font-weight:bold;line-height:55px"><i class="fal fa-calendar" style="color:white"></i>Know the best days to visit</h1>
                     <h4 style="letter-spacing:2px;line-height:30px;">
                             The data we have collected <br>until now <br><br>
@@ -51,7 +49,7 @@
                             <button class="button" style="background:#673ab7;opacity:0.8"><span>See analysis </span></button>
                     </h4>
                 </div>
-                <div class="sidebar-two">
+                <div class="sidebar-two"> <!div3 need for defining a flex container>
                         <h1 style="letter-spacing:2px;font-weight:bold;line-height:55px"><i class="fal fa-calendar" style="color:white"></i>Hungry?</h1>
                         <h4 style="letter-spacing:2px;line-height:30px;">
                                 The data we have collected <br>until now <br><br>
@@ -61,13 +59,13 @@
                 </div>
             </section>
             <section class="equal-height-container">        
-                    <div class="first"></div>
-                    <div class="second">
-                        <div class="second-a" style="color:white">
+                <div class="first"></div> <!div4 need for defining a flex container and add background >
+                    <div class="second"> <!div5 need to sogment as row>
+                        <div class="second-a" style="color:white">  <!div6 need to define rrow1>
                             <h1 >Crowd Management Solutions</h1>
                             <h2>Contact Us @ <a href="mailto:example@example.com" style="color:#35c793">111exapmle@example.com</a></h2>
                         </div>
-                        <div class="second-b">
+                        <div class="second-b"> <!div6 need for defining a flex row2>
                                 <h1 style="color:white">Feedback</h1> 
                                 <h2 style="text-align:center"> <textarea type="textarea" width="100px" height="500px"></textarea></h2>
                                 
@@ -75,8 +73,13 @@
                     </div>
                 </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+            <div> <!div7 need for defining a flex column>
+                    Copyright&copy; 2018 ____ ____. All Right Reserved
+            </div>
+            <div> <!div8 need for defining a flex column>
+                Follow Us on : <i class="fa fa-instagram" style="padding:2px 5px ;font-size:48px;color:red"></i> <i class="fa fa-facebook-square" style="padding:2px 5px;font-size:48px;color:red"></i> <i class="fa fa-google-plus-circle" style="font-size:48px;color:red"></i>
+            </div>
     </footer>
 </body>
 </html>
